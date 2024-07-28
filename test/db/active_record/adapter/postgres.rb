@@ -22,4 +22,11 @@ describe DB::ActiveRecord::Adapter::Postgres do
 		
 		expect(connection.execute("SELECT 1")).to be == [[1]]
 	end
+	
+	# it "can create model objects" do
+	# 	post = Post.create!
+	# 	post.comments << Comment.create!
+
+	# 	expect(post.comments).to have_attributes(count: be == 1)
+	# end
 end
